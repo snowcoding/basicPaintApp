@@ -4,4 +4,18 @@
 
 #color-sel {
     margin-left:15px;
+    margin-bottom: 15px;
+}
+
+#color-sel-label {
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+#instruct {
+    margin-left:15px;
+}
+
+#sig{
+    margin-left:15px;
 }
