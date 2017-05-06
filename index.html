@@ -1,36 +1,45 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-  <title>Basic Paint Tool</title>
-  <meta name="description" content="The Basic Paint Tool">
-  <meta name="author" content="Ben Kung">
+        <title>Basic Paint App</title>
+        <meta name="description" content="The Basic Paint Tool">
+        <meta name="author" content="Ben Kung">
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">    
-  <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">    
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-</head>
+    <body>  
+        <div class="row" id="color-sel">
+            <label id="color-sel-label">Choose a color: </label>
+            <button type="button" class="btn btn-outline-primary">Blue</button>
+            <button type="button" class="btn btn-outline-secondary">Grey</button>
+            <button type="button" class="btn btn-outline-success">Green</button>
+            <button type="button" class="btn btn-outline-info">Sky Blue</button>
+            <button type="button" class="btn btn-outline-warning">Orange</button>
+            <button type="button" class="btn btn-outline-danger">Red</button>
+        </div>
 
-<body>
-  
-    <div class="row" id="color-sel">
-        <label id="color-sel-label">Choose a color: </label>
-  <button type="button" class="btn btn-outline-primary">Blue</button>
-<button type="button" class="btn btn-outline-secondary">Grey</button>
-<button type="button" class="btn btn-outline-success">Green</button>
-<button type="button" class="btn btn-outline-info">Sky Blue</button>
-<button type="button" class="btn btn-outline-warning">Orange</button>
-<button type="button" class="btn btn-outline-danger">Red</button>
-</div>
-    <div class="row" id="instruct">Draw something in the box below</div>
-    <canvas id="canvasDiv" width="490" height="220"></canvas>
-<div id="sig">Ben Kung @2017</div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="js/script.js"></script>
-    
-</body>
+        <div class="row" id="brush-size-sel">
+            <label for="brush-size-input" id="brush-size-label" class="col-3">Enter Brush Size (1-100):</label>
+            <div class="col-3">
+                <input class="form-control" type="number" min="1" max="100" value="10" id="brush-size-input">
+            </div>
+            <div class="col-6">
+            </div>
+        </div>
+
+        <div class="row" id="instruct">Draw something in the box below</div>
+        
+        <canvas id="canvasDiv" width="490" height="220"></canvas>
+        
+        <div id="sig">Ben Kung @2017</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>

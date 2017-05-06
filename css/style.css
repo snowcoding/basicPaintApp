@@ -2,12 +2,12 @@
   border:1px solid black;
 }
 
-#color-sel {
+#color-sel, #brush-size-sel {
     margin-left:15px;
     margin-bottom: 15px;
 }
 
-#color-sel-label {
+#color-sel-label, #brush-size-label {
     padding-right: 20px;
     padding-top: 5px;
 }
